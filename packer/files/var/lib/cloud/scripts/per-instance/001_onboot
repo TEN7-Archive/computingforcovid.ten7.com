@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Scripts in this directory will be executed by cloud-init on the first boot of droplets
+# created from your image.  Things like generating passwords, configuration requiring IP address
+# or other items that will be unique to each instance should be done in scripts here.
+
+# set unique hostname
+/bin/hostname computing-for-covid-v1-$(uuidgen)
+
+# attach to rosetta project
+/usr/bin/boinccmd --project_attach https://boinc.bakerlab.org/rosetta/  2144618_b470da8acd403327278237d3b4ce1be3
