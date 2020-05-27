@@ -1,7 +1,7 @@
 {
   "variables": {
     "token": "{{env `DIGITALOCEAN_TOKEN`}}",
-    "image_name": "computing-for-covid-v1",
+    "image_name": "computing-for-covid-v2",
     "apt_packages": "boinc-client boinctui"
   },
   "builders": [
