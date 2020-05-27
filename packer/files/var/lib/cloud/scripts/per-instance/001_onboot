@@ -8,4 +8,4 @@
 /bin/hostname computing-for-covid-v1-$(uuidgen)
 
 # attach to rosetta project
-/usr/bin/boinccmd --project_attach https://boinc.bakerlab.org/rosetta/  2144618_b470da8acd403327278237d3b4ce1be3
+/usr/bin/boinccmd --project_attach https://boinc.bakerlab.org/rosetta/  2144618_239780a06bce7c2e5c47578069711b37
