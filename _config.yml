@@ -1,3 +1,7 @@
+title: <img src="/images/favicon-w.png" /> Computing for COVID
+url: "https://computingforcovid.io"
+permalink: pretty
+favicon: /images/favicon.png
 plugins:
   - jekyll-relative-links
 relative_links:
@@ -5,5 +9,22 @@ relative_links:
   collections: true
 include:
   - README.md
+theme: bulma-clean-theme
+exclude: 
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
-remote_theme: chrisrhymes/bulma-clean-theme
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "page"
+      hide_hero: true
+      hide_footer: true

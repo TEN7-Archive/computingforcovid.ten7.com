@@ -1,4 +1,4 @@
-# Computing for Covid 
+# Computing for COVID
 
 ## A DigitalOcean Marketplace App
 
@@ -8,7 +8,7 @@ This repo uses [Packer scripts](https://github.com/digitalocean/marketplace-part
 
 You can easily start a brand new droplet from the DigitalOcean Marketplace. Sponsored by [TEN7](https://ten7.com/)
 
-## Getting started instructions
+## Getting started
 
 It's relatively straight forward to setup a new DigitalOcean account and to get up and running with a droplet. It's probably even easier to setup the droplet if you already have an account, because that likely means you're already familiar with the interface.
 
@@ -47,7 +47,7 @@ You’re done! After installation, the droplet(s) connect to the [Rosetta@home](
 After a while you can check to see that your new cloud computer is working by clicking on one of the droplet names and then _Graphs_ on the left side of the following window. It’s very high-level information and just shows how much of each CPU is being used:
 ![CPU graphs](images/cpu-graphs.png)
 
-## Getting help
+## Help
 Contact us on [cfc@ten7.com](mailto:cfc@ten7.com) if you have any questions, we're happy to help as much as we can to get you up and running.
 
 Thanks so much for setting up a cloud computer to fight COVID-19 with us!

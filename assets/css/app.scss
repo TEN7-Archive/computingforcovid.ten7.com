@@ -1,0 +1,17 @@
+---
+---
+$primary: #60B314;
+$link: #2540B3;
+$link-visited: #326601;
+$link-hover: #B32B02;
+
+// Import Main CSS file from theme
+@import "main";
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.gh-sponsor {
+    color: #ffffff;
+} 
