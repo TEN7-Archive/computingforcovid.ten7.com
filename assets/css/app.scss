@@ -12,6 +12,12 @@ a {
     text-decoration: underline;
     font-weight: bold;
 }
+
+a.navbar-item, a.navbar-link {
+    text-decoration: none;
+    font-weight: normal;
+}
+
 .gh-sponsor {
     color: #ffffff;
 } 
