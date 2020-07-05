@@ -48,6 +48,6 @@ After a while you can check to see that your new cloud computer is working by cl
 ![CPU graphs](images/cpu-graphs.png)
 
 ## Help
-Contact us on [cfc@ten7.com](mailto:cfc@ten7.com) if you have any questions, we're happy to help as much as we can to get you up and running.
+Contact us on [help@computingforcovid.io](mailto:help@computingforcovid.io) if you have any questions, we're happy to help as much as we can to get you up and running.
 
 Thanks so much for setting up a cloud computer to fight COVID-19 with us!
