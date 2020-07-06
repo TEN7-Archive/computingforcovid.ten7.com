@@ -1,5 +1,10 @@
 # Computing for COVID
 
+## TL;DR (Too long; didn't read)
+
+* I want to help scientists fight COVID
+* 
+
 ## A DigitalOcean Marketplace App
 
 The Computing for COVID app is here: [https://marketplace.digitalocean.com/apps/computing-for-covid](http://t7.io/cfc)
