@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Computing for COVID
 
 ## Summary
