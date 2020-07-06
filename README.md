@@ -1,5 +1,6 @@
 ---
 title: Home
+permalink: index.html
 ---
 
 # Computing for COVID
