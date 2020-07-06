@@ -5,7 +5,7 @@
 # or other items that will be unique to each instance should be done in scripts here.
 
 # set unique hostname
-/bin/hostname computing-for-covid-v2-$(uuidgen)
+/bin/hostname computing-for-covid-v3-$(uuidgen)
 
 # attach to rosetta project
 /usr/bin/boinccmd --project_attach https://boinc.bakerlab.org/rosetta/  2144618_239780a06bce7c2e5c47578069711b37
