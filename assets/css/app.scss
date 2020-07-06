@@ -1,7 +1,7 @@
 ---
 ---
 $primary: #60B314;
-$link: #2540B3;
+$link: #326601;
 $link-visited: #326601;
 $link-hover: #B32B02;
 
@@ -21,3 +21,10 @@ a.navbar-item, a.navbar-link {
 .gh-sponsor {
     color: #ffffff;
 } 
+
+.content h1, 
+.content h2, 
+.content h3, 
+.content h4 {
+    color: #454545;
+}
