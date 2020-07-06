@@ -20,6 +20,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
 
+markdown: kramdown
+
 defaults:
   -
     scope:
