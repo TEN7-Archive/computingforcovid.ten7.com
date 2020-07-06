@@ -4,7 +4,7 @@
 * Help [COVID researchers](https://www.bakerlab.org/) find [a cure](https://www.ipd.uw.edu/coronavirus/) by running a computer in the cloud
 * It's [easy to setup](#setup); costs start at $15/mo for the compute power at [DigitalOcean](https://m.do.co/c/5fb69d9c62e4)
 * You'll be creating and starting a droplet using an [App on the DigitalOcean Marketplace](http://t7.io/cfc)
-* There are [step-by-step instructions](#setup-instructions) to get the droplet running, the contents of which are open source and created with [Packer scripts](https://github.com/digitalocean/marketplace-partners)
+* There are [step-by-step instructions](https://computingforcovid.io/setup) to get the droplet running, the contents of which are open source and created with [Packer scripts](https://github.com/digitalocean/marketplace-partners)
 * If you don't have a DigitalOcean account, sign up using [this link](https://m.do.co/c/5fb69d9c62e4) to get a $100 credit
 * [Computing for COVID](http://t7.io/cfc) is sponsored by [TEN7](https://ten7.com/).
 
