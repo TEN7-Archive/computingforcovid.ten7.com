@@ -19,7 +19,9 @@ The Computing for COVID droplet is self-sufficient; you can set it and forget it
 Send email to [help@computingforcovid.io](mailto:help@computingforcovid.io) and we'll do our best to help out. You can also [create an issue](https://github.com/ten7/computing-for-covid/issues/new) in the Github repo.
 
 ## Open source
-The app is built using [Packer scripts](https://github.com/digitalocean/marketplace-partners) from DigitalOcean as a starting point. The scripts configure an Ubuntu 18.04 droplet with `boinc` that automatically attaches itself to the Rosetta@home project and can be found in [the /packer directory of the repo](https://github.com/ten7/computing-for-covid/tree/master/packer).
+The app is built using [Packer scripts](https://github.com/digitalocean/marketplace-partners) from DigitalOcean as a starting point. The scripts configure an Ubuntu 18.04 droplet with `boinc` that automatically attaches itself to the Rosetta@home project.
+
+Build scripts are in the `/packer` directory: [https://github.com/ten7/computing-for-covid/tree/master/packer](https://github.com/ten7/computing-for-covid/tree/master/packer).
 
 View everything at [https://github.com/ten7/computing-for-covid](https://github.com/ten7/computing-for-covid)
 
