@@ -1,7 +1,7 @@
 # Computing for COVID
 
 ## Description
-The Computing for COVID DigitalOcean Marketplace App is a way for anyone (no tech skills required) to fire up a cloud computer that immediately starts crunching data to help scientists find proteins for the treatment of COVID-19. Costs start at $15/mo for the compute power at DigitalOcean.
+The [Computing for COVID DigitalOcean Marketplace App](http://t7.io/cfc) is a way for anyone (no tech skills required) to fire up a cloud computer that immediately starts crunching data to help scientists find proteins for the treatment of COVID-19. Costs start at $15/mo for the compute power at DigitalOcean.
 
 This allows you to support researchers at the University of Washington's [Baker Lab](https://www.bakerlab.org/) in their computational requirements as part of their [Coronavirus response](https://www.ipd.uw.edu/coronavirus/).
 
