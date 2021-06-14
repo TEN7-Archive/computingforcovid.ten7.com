@@ -1,8 +1,7 @@
 title: Computing for COVID
-url: "https://computingforcovid.io"
+url: "https://computingforcovid.ten7.com"
 permalink: pretty
 favicon: /images/favicon.png
-google_analytics: UA-1719985-7
 plugins:
   - jekyll-relative-links
 relative_links:
