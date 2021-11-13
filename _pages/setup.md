@@ -1,5 +1,6 @@
 ---
 title: Detailed setup instructions
+permalink: setup.html
 layout: page
 show_sidebar: false
 hide_hero: true

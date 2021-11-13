@@ -1,4 +1,5 @@
 title: Computing for COVID
+subtitle: "Version 1.0.0, 11/13/21"
 url: "https://computingforcovid.ten7.com"
 plugins:
     - jekyll-relative-links
@@ -10,37 +11,13 @@ relative_links:
 include:
     - index.md
 nav:
-    - title: "How To"
-      is_mobile_nav_item: false
-      subfolderitems:
-          items:
-              - title: "Getting Started"
-                description: ""
-                url: "/setup.html"
-              - title: "Use"
-                description: ""
-                url: "/setup.html#use"
-              - title: "Configuration"
-                description: ""
-                url: "/setup.html#configuration"
-              - title: "Backing up databases"
-                description: ""
-                url: "/setup.html#backing-up-databases"
-              - title: "Backing up files"
-                description: ""
-                url: "/setup.html#backing-up-files"
-              - title: "Rolling directory backups"
-                description: ""
-                url: "/setup.html#rolling-directory-backups"
-              - title: "Deployment"
-                description: ""
-                url: "/setup.html#deployment"
-              - title: "Debugging"
-                description: ""
-                url: "/setup.html#debugging"
-    - title: "Support"
-      description: "Find the support you need"
-      url: "/support.html"
+    - title: "Detailed Setup Instructions"
+      description: ""
+      url: "/setup.html"
+      is_mobile_nav_item: true
+    - title: "Team page at Rosetta"
+      description: ""
+      url: "https://boinc.bakerlab.org/rosetta/team_display.php?teamid=20117"
       is_mobile_nav_item: true
     - title: "Github"
       description: "Check out our Github"
