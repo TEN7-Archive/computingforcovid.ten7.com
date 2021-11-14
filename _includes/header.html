@@ -1,52 +1,35 @@
-
-<nav class="navbar is-primary" >
-    <div class="container">
-        <div class="navbar-brand">
-            <a href="{{ site.baseurl }}/" class="navbar-item">
-                <img src="/images/favicon-w.png" />
-            </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" id="navMenu">
-            <div class="navbar-start">
-                <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">Computing for COVID</a>
-                {% if site.data.navigation %}
-                {% for item in site.data.navigation %}
-                    {% if item.dropdown %}
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a href="{{ item.link | absolute_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                        <div class="navbar-dropdown">
-                            {% for subitem in item.dropdown %}
-                            <a href="{{ subitem.link | absolute_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% else %}
-                    <a href="{{ item.link | absolute_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
-                    {% endif %}
-                {% endfor %}
-                {% endif %}
-            </div>
-
-            <div class="navbar-end">
-                {% if site.gh_sponsor %}
-                <a class="navbar-item" href="https://github.com/sponsors/{{ site.gh_sponsor }}">
-                    <span class="icon gh-sponsor"><i class="fas fa-heart"></i></span>
-                    <span>Sponsor</span>
-                </a>
-                {% endif %}
-            </div>
-
-        </div>
+<div class="navbar nav container">
+  <div class="nav-container column">
+    <div class="nav-brand navbar-brand">
+      <a href="/" title="{{ site.title}}" class="nav-brand-link">
+        <span class="nav-brand-title">{{ site.title }}</span>
+      </a>
     </div>
-</nav>
-<!--
-<div class="notification is-warning">
-  <button class="delete"></button>
-  Bakerlab has <a href="https://twitter.com/RosettaAtHome/status/1306397571405869056">shared exciting Corona Virus</a> news. Note: creating a new app at DigitalOcean will not contribute any computational power any longer.
+    <div class="navbar-start">
+      <nav class="nav-main">
+        {% include navigation.html %}
+      </nav>
+    </div>
+    <button role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="thisNavBar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+        <div class="navbar-end">
+            {% for item in site.nav %} 
+              {% if item.is_button %}
+                <button class="button is-hidden-mobile is-hidden-touch">
+                    <a href="{{ item.url }}" class="button-link" target="_blank">
+                        <svg class="button-logo" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.25 7.75 16.5 1.5M12.334 1.5h4.167v4.167M16.5 10.667v4.166a1.666 1.666 0 0 1-1.667 1.667H3.167A1.667 1.667 0 0 1 1.5 14.833V3.167A1.667 1.667 0 0 1 3.167 1.5h4.166"
+                            />
+                        </svg>
+                        <span class="button-link-text">{{ item.title }}</span>
+                    </a>
+                </button>
+              {% endif %} 
+            {% endfor %}
+    </div>
+  </div>
 </div>
--->
