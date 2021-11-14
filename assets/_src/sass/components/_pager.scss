@@ -1,0 +1,116 @@
+.pager {
+	display: flex;
+	margin: 2.5rem auto 6rem;
+	padding: 0;
+
+	@include until($tablet) {
+		margin: 2.8rem auto 3rem;
+	}
+
+	@include until($mobile) {
+		flex-direction: column;
+		margin: 1rem 0;
+	}
+
+	&-next-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&-prev-content {
+		display: flex;
+		flex-direction: column;
+		padding-left: 1rem;
+	}
+
+	&-link {
+		align-items: start;
+		background: #ece6ff;
+		border-radius: 5px;
+		color: $color-mediumpurple;
+		display: flex;
+		height: 100%;
+		line-height: 1.1;
+		padding: 1.125rem 1.5rem;
+
+		@include until($mobile) {
+			border-radius: 0;
+		}
+	}
+
+	&-link:hover {
+		background: $color-mediumpurple;
+		color: #fff;
+	}
+
+	&-link:hover path {
+		stroke: #fff;
+	}
+
+	&-direction {
+		color: #1d0446;
+		font-size: 15px;
+		font-weight: 300;
+	}
+
+	&-title {
+		color: $color-mediumpurple;
+		font-size: 22px;
+		font-weight: 500;
+		letter-spacing: 0.7px;
+
+		@include until($mobile) {
+			font-size: 20px;
+		}
+	}
+
+	&-link:hover .pager-title,
+	&-link:hover .pager-direction {
+		color: #fff;
+	}
+
+	&-previous {
+		flex-basis: 40%;
+		margin-right: auto;
+		
+		@include until($tablet) {
+			flex-basis: 48%;
+			margin-right: auto;
+		}
+
+		@include until($mobile) {
+			margin: 1rem 0 2rem;
+			width: 100%;
+		}
+	}
+	
+	&-next {
+		flex-basis: 40%;
+		margin-left: auto;
+
+		@include until($tablet) {
+			flex-basis: 48%;
+			margin-left: auto;
+		}
+
+		@include until($mobile) {
+			margin: 0 0 2rem;
+			width: 100%;
+		}
+	}
+
+	&-arrow--left {
+		align-self: center;
+		margin-right: 0.2rem;
+
+		@include until($tablet) {
+			margin-right: 0;
+		}
+	}
+
+	&-arrow--right {
+		align-self: center;
+		margin-left: auto;
+		padding-left: 1rem;
+	}
+}

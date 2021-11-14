@@ -1,0 +1,217 @@
+.nav {
+	background-color: #fbf7f3;
+	margin-bottom: 0;
+	top: 0;
+	z-index: 2;
+
+	@include from($desktop) {
+		margin-bottom: 2.5rem;
+	}
+	
+	.button {
+		background-color: $color-paper;
+		border: 1px solid $color-warmgray;
+		border-radius: 3px;
+		box-sizing: border-box;
+		padding: 1.3em 1.1em;
+
+		@include from($desktop) {
+			margin-right: 2.5rem;
+		}
+	}
+
+	.button-logo {
+		margin-right: 0.3rem;
+		position: relative;
+		stroke: #270066;
+		stroke-linecap: round;
+		stroke-linejoin: round;
+		stroke-width: 2;
+		top: 0.2em;
+	}
+	
+	.button-link-text {
+		color: $color-mediumpurple;
+		font-family: $font-family;
+		font-size: 1.125rem;
+		font-weight: 500;
+	}
+
+	&-container {
+		align-items: center;
+		display: flex;
+		margin: 0 auto;
+		padding: 0;
+
+		@include from($desktop) {
+			align-items: center;
+			display: flex;
+			margin: 0 auto;
+			max-width: $navbar-width;
+		}
+	}
+
+	&-container .column {
+		max-width: $navbar-width;
+	}
+
+	&-brand-logo svg {
+		width: 67px;
+	}
+
+	&-brand-link {
+		color: $color-mediumpurple;
+		display: block;
+		white-space: nowrap;
+	}
+
+	&-brand-title {
+		color: $color-mediumpurple;
+		display: block;
+		font-family: $font-family;
+		font-size: 1.75rem;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.9px;
+		line-height: 106%;
+		white-space: nowrap;
+	}
+
+	&-brand-title.is-1rem {
+		font-size: 1rem;
+	}
+
+	&-brand-title.is-1-1rem {
+		font-size: 1.1rem;
+	}
+
+	&-brand-title.is-1-2rem {
+		font-size: 1.2rem;
+	}
+
+	&-brand-title.is-1-4rem {
+		font-size: 1.4rem;
+	}
+
+	&-brand-title.is-1-5rem {
+		font-size: 1.5rem;
+	}
+
+	&-item,
+	&-link {
+		color: $color-mediumpurple;
+		font-family: $font-family;
+		font-size: 1.125rem;
+		font-style: normal;
+		line-height: 1;
+		text-align: right;
+		text-transform: uppercase;
+	}
+
+	&-item:hover,
+	&-link:hover {
+		background-color: transparent;
+		color: $color-electricpurple;
+	}
+
+	&-main {
+		display: flex;
+		margin-left: auto;
+	}
+}
+
+.navbar {
+	align-items: center;
+	display: flex;
+	height: 6rem;
+
+	.navbar-brand {
+		align-items: center;
+		display: flex;
+		margin-left: 1.5rem;
+	
+		@include from($tablet) {
+			margin-left: 2.5rem;
+		}
+	}
+	
+	&-burger {
+		color: $color-mediumpurple;
+		margin-right: 1.4rem;
+	}
+
+	&-burger:hover {
+		background-color: $color-paper;
+	}
+
+	&-burger span {
+		height: 3px;
+		left: calc(50% - 16px);
+		width: 32px;
+	}
+
+	&-burger.is-active span:nth-child(1) {
+		top: calc(50% - 5px);
+	}
+
+	&-burger.is-active span:nth-child(3) {
+		top: calc(50% + 6px);
+	}
+
+	&-burger span:nth-child(1) {
+		top: calc(50% - 11px);
+	}
+
+	&-burger span:nth-child(2) {
+		top: calc(50% - 0px);
+	}
+
+	&-burger span:nth-child(3) {
+		top: calc(50% + 11px);
+	}
+
+	&-start {
+		margin-left: 3rem;
+	}
+
+	&-dropdown {
+		padding: 0;
+	}
+
+	&-item.has-dropdown .navbar-link:hover,
+	&-item.has-dropdown .navbar-link:focus,
+	&-item.has-dropdown.is-active .navbar-link {
+		background-color: #fbf7f3;
+	}
+}
+
+.navbar {
+	@include from ($tablet) {
+		&-burger {
+			color: $color-mediumpurple;
+			height: 3.25rem;
+			margin-left: auto;
+			margin-right: 1.5rem;
+			position: relative;
+			width: 3.25rem;
+		}
+	
+		&-burger span:nth-child(1) {
+			top: calc(50% - 13px);
+		}
+	
+		&-burger span:nth-child(2) {
+			top: calc(50% - 0px);
+		}
+	
+		&-burger span:nth-child(3) {
+			top: calc(50% + 13px);
+		}
+	
+		&-burger span {
+			height: 3px;
+			left: calc(50% - 21px);
+			width: 42px;
+		}
+	}
+}

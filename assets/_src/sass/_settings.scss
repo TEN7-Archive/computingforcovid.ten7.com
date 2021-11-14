@@ -1,0 +1,33 @@
+///////////////////////////////////////
+// css theme variables / settings
+
+$font-family: 'FoundersGroteskWeb', Helvetica, Arial, sans-serif;
+$font-family-secondary: 'ReplicaLLSub-Bold', Helvetica, Arial, sans-serif;
+
+// Primary Brand Colors
+$color-darkpurple: #1d0446;
+$color-mediumpurple: #270066;
+$color-electricpurple: #5f2fe1;
+$color-coral: #fb9d61;
+$color-paper: #fbf7f3;
+
+// Secondary Colors, Accents, and Neutrals
+$color-electricpurplealt: #6330f4;
+$color-dustylavender: #7f6b97;
+$color-lilac: #ece6ff;
+$color-mimosa: #ffe2cf;
+$color-khaki: #f4eee9;
+$color-warmgray: #cec8c3;
+
+$link-color: $color-electricpurple;
+$link-hover: $color-darkpurple;
+
+$link-color-footer: $color-coral;
+$link-footer-hover: $color-coral;
+
+$content-width: 896px;
+
+$navbar-width: 1200px;
+$footer-width: $navbar-width;
+
+$mobile: 500px;

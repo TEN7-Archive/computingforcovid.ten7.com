@@ -1,0 +1,35 @@
+<div class="navbar nav container">
+  <div class="nav-container column">
+    <div class="nav-brand navbar-brand">
+      <a href="/" title="{{ site.title}}" class="nav-brand-link">
+        <span class="nav-brand-title">{{ site.title }}</span>
+      </a>
+    </div>
+    <div class="navbar-start">
+      <nav class="nav-main">
+        {% include navigation.html %}
+      </nav>
+    </div>
+    <button role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="thisNavBar">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
+        <div class="navbar-end">
+            {% for item in site.nav %} 
+              {% if item.is_button %}
+                <button class="button is-hidden-mobile is-hidden-touch">
+                    <a href="{{ item.url }}" class="button-link" target="_blank">
+                        <svg class="button-logo" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.25 7.75 16.5 1.5M12.334 1.5h4.167v4.167M16.5 10.667v4.166a1.666 1.666 0 0 1-1.667 1.667H3.167A1.667 1.667 0 0 1 1.5 14.833V3.167A1.667 1.667 0 0 1 3.167 1.5h4.166"
+                            />
+                        </svg>
+                        <span class="button-link-text">{{ item.title }}</span>
+                    </a>
+                </button>
+              {% endif %} 
+            {% endfor %}
+    </div>
+  </div>
+</div>
