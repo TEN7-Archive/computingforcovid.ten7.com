@@ -1,3 +1,11 @@
+{% assign no_subfolderitems = true %}
+{% for item in site.nav %}
+	{% if item.subfolderitems %}
+		{% assign no_subfolderitems = false %}
+	{% endif %}
+{% endfor %}
+
+
 <div id="thisNavBar" class="navbar-menu">
 {% for item in site.nav %}
 
@@ -66,12 +74,19 @@
        
 	</div>
 	{% else %}
-		<div class="navbar-item is-hidden-touch">
-		{% unless item.is_button %}
-			<a class="navbar-item" href="{{ item.url }}">{{ item.title }}</a>
-		{% endunless %}
-		</div>
-	{% endif %}
 
+		{% if no_subfolderitems %}
+			<div class="navbar-item {% if item.is_button %} is-hidden-desktop {% endif %}">
+				<a class="navbar-item" href="{{ item.url }}">{{ item.title }}</a>
+			</div>		
+		{% else %}
+			<div class="navbar-item is-hidden-touch">
+				{% unless item.is_button %}
+					<a class="navbar-item" href="{{ item.url }}">{{ item.title }}</a>
+				{% endunless %}
+			</div>		
+		{% endif %}
+
+	{% endif %}
 {% endfor %}
 </div> 
