@@ -64,3 +64,13 @@
 		color: #fff;
 	}
 }
+
+.navbar-item.no-padding .navbar-subitem {
+	border: 0;
+
+	&:hover {
+		background-color: $color-paper;
+		border: 0;
+	}
+
+}

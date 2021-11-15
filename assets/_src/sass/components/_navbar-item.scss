@@ -68,3 +68,13 @@
 		padding-left: 5rem;
 	}
 }
+
+.navbar-item.no-padding {
+	@include mobile {
+		padding: 0;
+	}
+
+	@include tablet-only {
+		padding: 0;
+	}
+}
