@@ -1,0 +1,163 @@
+li > ul > li {
+	list-style: none;
+}
+
+li > ul > li::before {
+	color: $color-darkpurple;
+	content: '◦';
+	display: inline-block;
+	font-size: 1.8rem;
+	font-weight: bold;
+	left: 5px;
+	margin-bottom: -1em;
+	margin-left: -1em;
+	position: relative;
+	top: 2px;
+	width: 1em;
+}
+
+.content {
+	background: #fff;
+	border-radius: 5px;
+	letter-spacing: normal;
+	line-height: 1.5;
+	margin: 0 auto 2.5rem;
+	padding: 1.9rem 1.5rem 3.3rem;
+	position: relative;
+
+	h1 {
+		color: $color-mediumpurple;
+		font-family: $font-family;
+		font-size: 2.25rem;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 105%;
+		text-align: left;
+	}
+	
+	h2 {
+		color: $color-mediumpurple;
+		font-family: $font-family;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 106%;
+		text-align: left;
+	}
+
+	h3 {
+		color: $color-mediumpurple;
+		font-family: $font-family;
+		font-size: 1.5rem;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		line-height: 106%;
+		text-align: left;
+	}
+
+	h4 {
+		color: $color-electricpurple;
+		font-family: $font-family;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 500;
+		letter-spacing: 0.5px;
+		line-height: 106%;
+		text-align: left;
+		text-transform: uppercase;
+	}	
+			
+	p,
+	li,
+	strong {
+		color: $color-darkpurple;
+		font-family: $font-family;
+		font-size: 1.2rem;
+		letter-spacing: 0.02em;
+		overflow-wrap: break-word;
+	}
+
+	strong {
+		font-weight: 500;
+		
+	}
+
+	.post-opener p {
+		color: $color-mediumpurple;
+		font-family: $font-family-secondary;
+		font-size: 0.8rem;
+		font-weight: 600;
+		letter-spacing: 0.1em;
+		line-height: 0.3rem;
+		margin-bottom: 1.25rem;
+		text-transform: uppercase;
+	}
+
+	.post-content {
+		min-height: 70vh;
+	}
+}
+
+.content {
+	@include from($tablet) {
+		margin-bottom: 0;
+		padding: 2rem 2.5rem 3.7rem;
+
+		ul,
+		ul ul {
+			margin-top: 0;
+		}
+
+		p,
+		li,
+		strong {
+			font-size: 1.4rem;
+			letter-spacing: normal;
+		}
+	}
+
+	@include from($desktop) {
+		padding: 1.5rem 3.75rem 3.75rem;
+
+		strong {
+			letter-spacing: 0.03em;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+		}
+		
+		h2 {
+			font-size: 1.75rem;
+		}
+
+		.post-opener p {
+			font-size: 0.8125rem;
+			line-height: 0.9375rem;
+		}
+	}
+}
+
+.post-content {
+	min-height: 60vh;;
+}
+
+.post-content > ul > li {
+	list-style: none;
+}
+
+.post-content > ul > li::before {
+	color: $color-darkpurple;
+	content: '•';
+	display: inline-block;
+	font-size: 1.7rem;
+	font-weight: bold;
+	left: 5px;
+	margin-bottom: -1em;
+	margin-left: -1em;
+	position: relative;
+	width: 1em;
+}

@@ -1,0 +1,80 @@
+.nav-main .navbar-item {
+	color: $color-mediumpurple;
+}
+
+.nav-main .navbar-item:hover {
+	background-color: $color-paper;
+	color: $color-mediumpurple;
+}
+
+.navbar-item-header {
+	border-bottom: 1px solid #f4eee9;
+	color: $color-mediumpurple;
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding: 1rem 1.5rem;
+
+	@include from($tablet) {
+		padding: 1rem 2.5rem;
+	}
+}
+
+.navbar-menu.is-active {
+	display: block;
+	left: 0;
+	padding: 0;
+	position: absolute;
+	top: 6.2rem;
+	width: 100%;
+}
+
+.navbar-item .navbar-dropdown {
+	border-radius: 0 0 5px 5px;
+	width: 100%;
+}
+
+@include from($desktop) {
+	.navbar-item .navbar-dropdown {
+		border: 0;
+		border-radius: 5px;
+		overflow: hidden;
+		top: 3.5em;
+		width: 280px;
+	}
+
+	.navbar-item .navbar-link,
+	.navbar-item {
+		color: $color-mediumpurple;
+		font-family: $font-family;
+		font-size: 1.125rem;
+		font-weight: 500;
+
+		&::after {
+			border-color: $color-mediumpurple;
+			border-radius: 0;
+			height: 0.525em;
+			top: 1.75em;
+			width: 0.525em;
+		}
+	}
+}
+
+.navbar-dropdown .navbar-item-indent {
+	@include mobile {
+		padding-left: 3rem;
+	}
+	
+	@include tablet-only {
+		padding-left: 5rem;
+	}
+}
+
+.navbar-item.no-padding {
+	@include mobile {
+		padding: 0;
+	}
+
+	@include tablet-only {
+		padding: 0;
+	}
+}
