@@ -1,0 +1,40 @@
+I"<h1 id="detailed-setup-instructions">Detailed setup instructions</h1>
+
+<p>Here is a step-by-step guide to getting started.</p>
+
+<ol>
+  <li>If you don’t already have the DigitalOcean Marketplace page open (or if you do, but don’t see the $100 credit message on the page), use this link to get there: <a href="http://t7.io/cfc">http://t7.io/cfc</a>. Once you are there, click the blue button <em>Create Computing for COVID Droplet</em>.
+<img src="images/step-1.png" alt="Step 1" /></li>
+  <li>You might encounter a screen asking you to prove that you are human. You are human, right? Complete the <em>DigitalOcean Captcha Page</em>.
+<img src="images/step-2.png" alt="Step 2" /></li>
+  <li>On the <em>Create your account</em> screen, pick which method to use to create your account. We’re going to show the email here.
+<img src="images/step-3.png" alt="Step 3" /></li>
+  <li>Enter your email and password information. Click <em>Sign Up</em>.
+<img src="images/step-4.png" alt="Step 4" /></li>
+  <li>Switch to your email application and find the email DigitalOcean just sent you. Click on the link to verify your email address.
+<img src="images/step-5.png" alt="Step 5" /></li>
+  <li>After clicking to verify your email address, you should land on the <em>Set Up Billing</em> page. Enter your credit card and billing address information and click <em>Save Card</em>. You can also use Paypal. It will take you over to Paypal where you can set up your information, and then it will bring you back. 
+<img src="images/step-6.png" alt="Step 6" /></li>
+  <li>You will land on the <em>Welcome</em> page. Don’t worry about filling in anything here, it’s just DigitalOcean marketing stuff. Click on the DigitalOcean logo in the upper left corner.
+<img src="images/step-7.png" alt="Step 7" /></li>
+  <li>You’re now logged in and on the DigitalOcean dashboard. Click the button <em>Get Started with a Droplet</em> in the middle of your screen: a droplet is DigitalOcean’s name for a cloud computer.
+<img src="images/step-8.png" alt="Step 8" /></li>
+  <li>Under <em>Choose an image</em>, click the <em>Marketplace</em> tab. Now, use the search box to search for Computing for COVID: typing <em>covid</em> should bring it up. Select it when it comes up, it will look like this:
+<img src="images/step-9.png" alt="Step 9" /></li>
+  <li>Under <em>Choose a plan</em>, select <em>Basic</em> (it might already be selected). Select the <em>middle</em> $15/mo 2GB plan. You may have to move the carousel of plans to the left so you can see the right plan. Your plan should say <strong>2 GB / 2 CPUs</strong>
+<img src="images/step-10.png" alt="Step 10" /></li>
+  <li>Skip <em>Add block storage</em>, choose a datacenter region you like and skip  VPC network.
+<img src="images/step-11.png" alt="Step 11" /></li>
+  <li>Scroll down to <em>Authentication</em>. If you have SSH keys and know what you’re doing, use that option to enter an SSH key. Otherwise, select <em>Password</em> and enter a password in <em>Create root password</em>.
+<img src="images/step-12.png" alt="Step 12" /></li>
+  <li>Scroll down to <em>Finalize and create</em>. Under <em>How many Droplets?</em>, set how many droplets you’d like to create. One droplet = $15/month for 2CPUs of computing power. The screenshot shows 3 droplets being created, therefore 6CPUs of computing power. The cost would be $15 x 3 = $45 a month. If you’re using the $100 credit (good for 60 days), your first two months with this configuration would be free! Under <em>Choose a hostname</em>, leave the default names. Skip <em>Add tags</em>, <em>Select Project</em> and <em>Add backups</em>. Click <em>Create Droplet</em>.
+<img src="images/step-13.png" alt="Step 13" /></li>
+</ol>
+
+<p>You’re done! After installation, the droplet(s) connect to the <a href="https://boinc.bakerlab.org/">Rosetta@home</a> project and start downloading data to crunch. Here’s what your droplets look like as they start up for the first time:
+<img src="images/first-time-startup.png" alt="First time start up" /></p>
+
+<p>After a while you can check to see that your new cloud computer is working by clicking on one of the droplet names and then <em>Graphs</em> on the left side of the following window. It’s very high-level information and just shows how much of each CPU is being used:
+<img src="images/cpu-graphs.png" alt="CPU graphs" /></p>
+
+:ET
