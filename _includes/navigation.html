@@ -1,0 +1,99 @@
+{% assign no_subfolderitems = true %}
+{% for item in site.nav %}
+	{% if item.subfolderitems %}
+		{% assign no_subfolderitems = false %}
+	{% endif %}
+{% endfor %}
+
+
+<div id="thisNavBar" class="navbar-menu">
+{% for item in site.nav %}
+
+	{% if item.subfolderitems %}
+	<div class="navbar-item has-dropdown">
+		<!-- header for mobile dropdown -->
+		<div class="navbar-item-header is-hidden-desktop">{{ item.title }}</div> 
+		{% assign nav_title = item.title %}
+	
+		{% for entry in item.subfolderitems.items %}
+			{% if entry.url == page.url %}
+				{% assign nav_title = entry.title %}
+			{% endif %}
+		{% endfor %}
+
+		
+				<a class="navbar-link is-hidden-mobile is-hidden-touch">{{ item.title }}</a>
+				
+				{% if item.subfolderitems %}
+					<div class="navbar-dropdown">
+				{% else %}
+					<div class="navbar-item">
+				{% endif %}
+				
+					{% for entry in item.subfolderitems.items %}
+
+						{% if entry.url == page.url %}
+							<a class="navbar-subitem navbar-item-indent is-active" href="{{ entry.url }}">
+						{% else %}
+							<a class="navbar-subitem navbar-item-indent" href="{{ entry.url }}">
+						{% endif %}
+								<span class="navbar-subitem-content">
+									<span class="navbar-subitem-title navbar-subitem-title-smaller">{{ entry.title }}</span>
+									{% if entry.description %}
+										<span class="navbar-subitem-description">{{ entry.description }}</span>
+									{% endif %}
+								</span>
+							</a>	
+					{% endfor %}
+
+
+					{% comment %}
+						these items are added on to the mobile nav dropdown
+					{% endcomment %}
+
+					{% for item in site.nav %}
+						{% if item.is_mobile_nav_item %}
+
+						{% if item.url == page.url %}
+							<a class="navbar-subitem is-active is-hidden-desktop" href="{{ item.url }}">
+						{% else %}
+							<a class="navbar-subitem is-hidden-desktop" href="{{ item.url }}">
+						{% endif %}
+
+								<span class="navbar-subitem-content">
+									<span class="navbar-subitem-title">{{ item.title }}</span>
+									{% if item.description %}
+										<span class="navbar-subitem-description">{{ item.description }}</span>
+									{% endif %}
+								</span>
+							</a>
+						{% endif %}
+					{% endfor %}
+				</div>
+
+       
+	</div>
+	{% else %}
+
+		{% if no_subfolderitems %}
+			<div class="navbar-item no-padding {% if item.is_button %} is-hidden-desktop {% endif %}">
+				<a class="navbar-subitem" href="{{ item.url }}">
+					<span class="navbar-subitem-content">
+						<span class="navbar-subitem-title">{{ item.title }}</span>	
+						{% if item.description %}
+						<span class="navbar-subitem-description">{{ item.description }}</span>	
+						{% endif %}
+					</span>
+				</a>
+			</div>		
+		{% else %}
+			<div class="navbar-item is-hidden-touch">
+				{% unless item.is_button %}
+					<a class="navbar-item" href="{{ item.url }}">{{ item.title }}</a>
+				{% endunless %}
+			</div>		
+		{% endif %}
+
+	{% endif %}
+{% endfor %}
+</div> 
