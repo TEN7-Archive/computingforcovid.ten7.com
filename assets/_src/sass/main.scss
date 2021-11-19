@@ -1,0 +1,124 @@
+/*
+ *
+ * INSTRUCTIONS
+ *
+ * Copy the Legal Disclaimer and the @font-faces statements to your regular CSS file.
+ * The font file(s) should be placed relative to the regular CSS file.
+ *
+ */
+
+/*
+ * Legal Disclaimer for Web licence
+ *
+ * Licence to use self-hosted webfonts for displaying dynamic text on specified website domains. Our package includes WOFF and WOFF2 font formats.
+ *
+ * Should the license page views limit be exceeded the license holder will be required to contact Lineto.com for an upgrade.
+ *
+ * It is strictly prohibited to rename the font and to download or use these fonts in any other media.
+ *
+ * These Web fonts are licensed exclusively for the use on the following domain(s) and their subdomains:
+ *
+ * ten7.com (monthly pageviews: <50K)
+ *
+ */
+
+@import 'settings';
+@import '../../../node_modules/bulma/bulma.sass';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/article';
+@import 'components/navbar-item';
+@import 'components/navbar-subitem';
+@import 'components/pager';
+
+/* complete */
+@font-face {
+	font-family: 'ReplicaLLWeb-Bold';
+	src: url('/assets/fonts/ReplicaLLWeb-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'ReplicaLLWeb-Bold';
+	src: url('/assets/fonts/ReplicaLLWeb-Bold.woff2') format('woff2');
+}
+
+/* subset */
+@font-face {
+	font-family: 'ReplicaLLSub-Bold';
+	src: url('/assets/fonts/ReplicaLLSub-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'ReplicaLLSub-Bold';
+	src: url('/assets/fonts/ReplicaLLSub-Bold.woff2') format('woff2');
+}
+
+/* other fonts */
+@font-face {
+	font-family: 'FoundersGroteskWeb';
+	font-weight: 400;
+	src: url('/assets/fonts/founders-grotesk-web-medium.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'FoundersGroteskWeb';
+	font-weight: 400;
+	src: url('/assets/fonts/founders-grotesk-web-medium.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'FoundersGroteskWeb';
+	font-weight: 300;
+	src: url('/assets/fonts/founders-grotesk-text-web-regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'FoundersGroteskWeb';
+	font-weight: 300;
+	src: url('/assets/fonts/founders-grotesk-text-web-regular.woff2') format('woff2');
+}
+
+html {
+	background-color: $color-darkpurple;
+}
+
+body {
+	background-color: #fff;
+	color: $color-darkpurple;
+	font-family: $font-family;
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 135%;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+
+	&:visited {
+		color: $link-color;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: $link-hover;
+		text-decoration: none;
+	}
+}
+
+.container {
+			
+	@include from($desktop) {
+		.column.is-8 {
+			width: $content-width;
+		}
+
+		&:not(.is-max-desktop):not(.is-max-widescreen) {
+			max-width: none;
+		}	
+	}
+
+	.column {
+		width: 100%;
+	}
+}

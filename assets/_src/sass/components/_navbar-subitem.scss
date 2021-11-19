@@ -1,0 +1,75 @@
+.navbar-subitem {
+	border-bottom: 1px solid #f4eee9;
+	display: flex;
+	padding: 1rem 1.5rem;
+	transition: all 0.2s ease-in;
+
+	@include tablet-only {
+		padding: 1rem 2.5rem;
+	}
+
+	.navbar-subitem-description {
+		font-size: 1rem;
+	}
+
+	.navbar-subitem-title {
+		font-size: 1.5rem;
+
+		@include from($desktop) {
+			font-size: 1.125rem;
+		}
+	}
+
+	.navbar-subitem-title-smaller {
+		@include touch { 
+			font-size: 1.35rem;
+		}
+	}
+
+	&-description {
+		color: $color-dustylavender;
+		font-size: 0.875rem;
+	}
+
+	&:hover {
+		background-color: rgba($color-lilac, 0.3);
+		transition: all 0.2s ease-in;
+	}
+
+	&:hover .navbar-subitem-title {
+		color: $color-mediumpurple;
+	}
+
+	&:hover .navbar-subitem-description {
+		color: $color-mediumpurple;
+	}
+
+	&-title {
+		color: $color-mediumpurple;
+		display: block;
+		font-size: 1.125rem;
+		font-weight: 500;
+		line-height: 1.4rem;
+	}
+}
+
+.navbar-dropdown .navbar-subitem.is-active {
+	background-color: $color-mediumpurple;
+
+	.navbar-subitem-description {
+		color: #fff;
+	}
+
+	.navbar-subitem-title {
+		color: #fff;
+	}
+}
+
+.navbar-item.no-padding .navbar-subitem {
+	border: 0;
+
+	&:hover {
+		background-color: $color-paper;
+		border: 0;
+	}
+}
