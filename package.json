@@ -1,7 +1,7 @@
 {
   "name": "TEN7",
   "version": "1.0.0",
-  "description": "Computing for COVID",
+  "description": "Another Site Template",
   "browserslist": [
     "> 1%",
     "last 2 versions",
@@ -54,14 +54,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ten7/computingforcovid.ten7.com.git"
+    "url": "https://github.com/ten7"
   },
   "author": "TEN7",
   "license": "GPL 3",
   "bugs": {
-    "url": "https://github.com/ten7/computingforcovid.ten7.com/issues"
+    "url": "https://github.com/ten7"
   },
-  "homepage": "https://computingforcovid.ten7.com/",
+  "homepage": "https://ten7.com/",
   "engines": {
     "node": ">= 12.0.0",
     "npm": ">= 6.9.0"
