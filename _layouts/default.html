@@ -4,14 +4,7 @@
 
     <body>
         <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-N6K9NBR"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
+        {{ site.google_tag_manager.page_html }}
         <!-- End Google Tag Manager (noscript) -->
 
         {% include header.html %}
@@ -21,7 +14,7 @@
         {% include footer.html %}
 
         <!-- Start of HubSpot Embed Code -->
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2309530.js"></script>
+        {{ site.hubspot.page_html }}
         <!-- End of HubSpot Embed Code -->
     </body>
 </html>
