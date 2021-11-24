@@ -1,8 +1,12 @@
 <footer class="footer">
   <div class="footer-container columns">
     <div class="column footer-main is-9">
-      <div class="footer-header">Built with love by TEN7</div>
-      {{site.title}} is built and supported by TEN7 where our mission is to <a href="https://ten7.com/mission">Make Things That Matter</a>.
+      {% if site.footer.has_built_with_love %}
+      <div class="footer-header">Built with love by TEN7</div>  
+      {% endif %}
+      
+      {{ site.footer.html | flatify }}
+      
     </div>
     <div class="column has-text-right is-3">
       <a href="https://ten7.com" class="ten7-link">
