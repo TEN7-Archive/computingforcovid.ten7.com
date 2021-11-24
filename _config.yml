@@ -45,10 +45,6 @@ google_tag_manager:
     height="0" width="0" style="display: none; visibility: hidden"></iframe>
     </noscript>
 
-hubspot:
-  page_html: |
-    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2309530.js"></script>
-
 markdown: kramdown
 
 collections:
